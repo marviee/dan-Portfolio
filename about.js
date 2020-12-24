@@ -15,7 +15,3 @@ function scrollFunction() {
     mybutton.style.display = "block";
   } else {mybutton.style.display = "none";}
 }
-
-
-function functionAbout(){
-}

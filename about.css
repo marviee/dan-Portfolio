@@ -4,18 +4,18 @@
 body{background-color:#fff; font-family:'Nova Flat',Arial;}
 
 /* Go-to-Top Button */
-.mytop{display: block;}
+.mytop{display:block;}
 
-.topButton{background-color:inherit; border-radius:100px; bottom:10px; color:#696969; cursor:pointer; display:none; font-size:2.5rem; opacity:0.9; outline:none; padding:1px; position:fixed; right:10px; z-index:99;}
-.topButton:hover{opacity:1; transition:opacity 1s;}
+.topButton{border-radius:100px; bottom:10px; color:#696969; cursor:pointer; display:none; font-size:2.5rem; outline:none; padding:1px; position:fixed; right:10px; transition:color 1s; z-index:99;}
+.topButton:hover{color:#000; transition:color 1s;}
 
 /* Navigation Bar */
 .icon{display:none;}
 
-.navBar{background-color:inherit; border-bottom:1px solid #f2f2f2; height:70px; padding-top:17px; transition:box-shadow 1s;}
+.navBar{border-bottom:1px solid #f2f2f2; height:70px; padding-top:17px; transition:box-shadow 1s;}
 .navBar:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); transition:box-shadow 1s;}
 
-.nickname{background-color:inherit; color:#c0c0c0; display:inline; font-size:140%; margin-left:5%; text-decoration:none; transition:text-shadow 1s;}
+.nickname{color:#a9a9a9; display:inline; font-size:140%; margin-left:5%; text-decoration:none; transition:text-shadow 1s;}
 .nickname:hover{text-shadow:1px 1px 20px #fff; transition:text-shadow 1s;}
 
 .anchor{color:#696969; display:inline; font-size:150%; margin-left:2%; text-decoration:none; transition:text-shadow 1s;}
@@ -32,14 +32,14 @@ hr{color:#00bfff; margin-bottom:5%; margin-left:20%; margin-right:20%; margin-to
 
 .designer{color:#696969;}
 
-.image{border-radius:1000px; padding:200px; position:absolute; z-index:0;}
+.image{background-image:url('image2.jpg'); border-radius:1000px; padding:200px; position:absolute; z-index:0;}
 
-.image1{background-image:url('image2.jpg'); left:15%; top:210px;}
+.image1{left:15%; top:210px;}
 
-.image2{background-image:url('image2.jpg'); right:13%; top:1050px;}
+.image2{right:13%; top:1050px;}
 
-.hire, .cv, .download{background-color:#ff0000; border-radius:83px; color:#fff; cursor:pointer; display:inline-block; font-size:120%; font-weight:100; margin-top:2%; padding:10px 5px; text-align:center; text-decoration:none; width:20%;}
-.hire:hover, .cv:hover, .download:hover{}
+.hire, .cv, .download{background-color:#ff0000; border-radius:83px; color:#fff; cursor:pointer; display:inline-block; font-size:120%; font-weight:100; margin-top:2%; padding:10px 5px; text-align:center; text-decoration:none; transition:width 1s; width:20%;}
+.hire:hover, .cv:hover{width:21%; transition:width 1s;}
 
 /* Body Two */
 .body2{height:500px; padding-bottom:500px; padding-left:50px; padding-top:200px;}
@@ -53,6 +53,7 @@ hr{color:#00bfff; margin-bottom:5%; margin-left:20%; margin-right:20%; margin-to
 span{margin-left:5%;}
 
 .download{margin-left:2%; margin-top:3%; padding:10px; width:11%;}
+.download:hover{width:12%; transition:width 1s;}
 
 /* Body Three */
 .body3{height:auto; line-height:1.5; padding-bottom:250px; padding-top:200px;}
@@ -62,14 +63,14 @@ span{margin-left:5%;}
 .row{margin-top:4%;}
 .row:after{content:""; display:table; clear:both;}
 
-.card{background-color:inherit; color:#696969; height:300px; padding:16px; text-align:center; transition:box-shadow 0.7s;}
+.card{color:#696969; height:300px; padding:16px; text-align:center; transition:box-shadow 0.7s;}
 .card:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); transition:box-shadow 0.7s;}
 
 .logo{border-radius:300px; position:absolute; top:2080px; z-index:1;}
 
 .python{background-image:url('python.jpg'); left:13.5%; padding:50px;}
 
-.uiux{background-image:url('uiux.jpg'); left:46%; padding:40px;}
+.uiux{background-image:url('uiux.jpg'); left:45%; padding:50px;}
 
 .web{background-image:url('webdesign.jpg'); right:15%; padding:48px;}
 
@@ -85,6 +86,9 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
 
 /* SMALL SCREEN */
 @media screen and (min-width: 480px) and (max-width: 700px) {
+  /* Go-to-Top Button */
+  .topButton{bottom:2px; right:2px;}
+
   /* The Navigation Bar */
   a{display:inline;}
 
@@ -94,11 +98,11 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
 
   .navBar{padding-top:3%;}
 
-  .anchor{background-color:inherit; border-radius:0; color:#696969; float:left; height:50px; text-align:center;}
+  .anchor{border-radius:0; color:#696969; float:left; height:50px; text-align:center;}
 
   .nickname{padding-top:26px; padding-bottom:26px}
 
-  .navBar a.icon{background-color:inherit; color:#696969; display:inline; float:right; font-size:150%; height:45px; padding-top:1%; text-align:center; text-decoration:none; width:15%;}
+  .navBar a.icon{color:#696969; display:inline; float:right; font-size:150%; height:45px; padding-top:1%; text-align:center; text-decoration:none; width:15%;}
   .navBar a.icon:hover{text-shadow:1px 1px 20px #000; transition:text-shadow 1s;}
 
   /* The Responsive Navigation Bar */
@@ -117,7 +121,7 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
   /* Body One */
   .body1{height:auto; line-height:1.5; margin-bottom:13%; padding-bottom:100px; padding-left:0; padding-top:90px; text-align:center;}
 
-  .image1{background-image:url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:20%; padding:150px; position:static; width:30%;}
+  .image{background-image:url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:20%; padding:150px; position:static; width:30%;}
 
   .hello{margin-left:25%;}
 
@@ -125,8 +129,6 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
 
   /* Body Two */
   .body2{height:auto; line-height:1.5; padding-left:0; margin-top:13%; padding-bottom:100px; padding-right:0; padding-top:90px; text-align:center;}
-
-  .image2{background-image: url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:20%; padding:150px; position:static; width:30%;}
 
   .let{margin-top:8%}
 
@@ -169,11 +171,11 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
 
   .navBar{padding-top:3%;}
 
-  .anchor{background-color:inherit; border-radius:0; color:#696969; float:left; height:50px; text-align:center;}
+  .anchor{border-radius:0; color:#696969; float:left; height:50px; text-align:center;}
 
   .nickname{padding-top:26px; padding-bottom:26px}
 
-  .navBar a.icon{background-color:inherit; color:#696969; display:inline; float:right; font-size:150%; height:45px; padding-top:1%; text-align:center; text-decoration:none; transition:text-shadow 0.8s; width:20%;}
+  .navBar a.icon{color:#696969; display:inline; float:right; font-size:150%; height:45px; padding-top:1%; text-align:center; text-decoration:none; transition:text-shadow 0.8s; width:20%;}
   .navBar a.icon:hover{text-shadow:1px 1px 20px #000; transition:text-shadow 1s;}
 
   /* The Responsive Navigation Bar */
@@ -192,7 +194,7 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
   /* Body One */
   .body1{height:auto; line-height:1.5; margin-bottom:13%; padding-bottom:100px; padding-left:0; padding-top:90px; text-align:center;}
 
-  .image1{background-image:url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:10%; padding:120px; position:static; width:30%;}
+  .image{background-image:url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:10%; padding:120px; position:static; width:30%;}
 
   .hello{font-size:120%; margin-left:25%;}
 
@@ -204,8 +206,6 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
 
   /* Body Two */
   .body2{height:auto; line-height:1.5; padding-left:0; margin-top:13%; padding-bottom:100px; padding-right:0; padding-top:90px; text-align:center;}
-
-  .image2{background-image: url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:10%; padding:120px; position:static; width:30%;}
 
   .let{font-size:130%; margin-top:8%}
 
@@ -247,11 +247,11 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
 
   .navBar{padding-top:1%;}
 
-  .anchor{background-color:inherit; border-radius:0; color:#696969; float:left; height:50px; text-align:center;}
+  .anchor{border-radius:0; color:#696969; float:left; height:50px; text-align:center;}
 
   .nickname{padding-top:26px; padding-bottom:26px}
 
-  .navBar a.icon{background-color:inherit; color:#696969; display:inline; float:right; font-size:150%; height:45px; padding-top:1%; text-align:center; text-decoration:none; width:15%;}
+  .navBar a.icon{color:#696969; display:inline; float:right; font-size:150%; height:45px; padding-top:1%; text-align:center; text-decoration:none; width:15%;}
   .navBar a.icon:hover{text-shadow:1px 1px 20px #000; transition:text-shadow 1s;}
 
   /* The Responsive Navigation Bar */
@@ -270,7 +270,7 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
   /* Body One */
   .body1{height:auto; line-height:1.5; margin-bottom:13%; padding-bottom:100px; padding-left:0; padding-top:90px; text-align:center;}
 
-  .image1{background-image:url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:35%; padding:150px; position:static; width:30%;}
+  .image{background-image:url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:35%; padding:150px; position:static; width:30%;}
 
   .hello{margin-left:15%;}
 
@@ -278,8 +278,6 @@ footer{background-color:#dcdcdc; height:200px; margin-top:5%;}
 
   /* Body Two */
   .body2{height:auto; line-height:1.5; padding-left:0; margin-top:13%; padding-bottom:100px; padding-right:0; padding-top:90px; text-align:center;}
-
-  .image2{background-image: url('image2b.jpg'); border-radius:1000px; margin-bottom:5%; margin-left:35%; padding:150px; position:static; width:30%;}
 
   .let{margin-top:8%}
 
