@@ -208,12 +208,12 @@ footer{background-color:#DCDCDC; height:200px; margin-top:5%;}
 
   .designer{font-size:120%}
 
-  .hire, .cv{font-size:100%; width:33%;}
-  .hire:hover, .cv:hover{width:34%;}
+  .hire, .cv{font-size:90%; width:31%;}
+  .hire:hover, .cv:hover{width:32%;}
 
   /* Body Two */
-  .download{font-size:100%; width:45%;}
-  .download:hover{width:46%;}
+  .download{font-size:90%; width:43%;}
+  .download:hover{width:44%;}
 
   /* Body Three */
   .services{margin-left:15%;}
