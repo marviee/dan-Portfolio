@@ -6,7 +6,7 @@ body{background-color:#FFF; font-family:'Nova Flat',Arial;}
 /* Go-to-Top Button */
 .mytop{display:block;}
 
-.topButton{border-radius:100px; bottom:10px; color:#696969; cursor:pointer; display:none; font-size:2.5rem; outline:none; padding:1px; position:fixed; right:10px; transition:color 1s; z-index:99;}
+.topButton{border-radius:100px; bottom:10px; text-shadow:0px 3px 3px #808080; color:#696969; cursor:pointer; display:none; font-size:2.5rem; outline:none; padding:1px; position:fixed; right:10px; transition:color 1s; z-index:99;}
 .topButton:hover{color:#000; transition:color 1s;}
 
 /* Navigation Bar */
