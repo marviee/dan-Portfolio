@@ -267,13 +267,16 @@ footer{background-color:#DCDCDC; color:#808080; height:230px; padding-top:20px; 
   .cv, .download, .hire{font-size:80%; width:29%;}
   .cv:hover, .hire:hover{width:30%;}
 
+  .download{width:40%;}
+  .download:hover{width:41%;}
+
   /* Body Three */
-  .services{margin-left:18%;}
+  .services{margin-left:-50%;}
 
   .python, .uiux, .web{margin-left:34%;}
 
   /* Body Four */
-  .recent{font-size:130%; margin-left:4%;}
+  .recent{font-size:130%; margin-left:-60%;}
 
   .column2{display:block; margin-bottom:25px; margin-left:0; width:100%;}
 
@@ -287,8 +290,8 @@ footer{background-color:#DCDCDC; color:#808080; height:230px; padding-top:20px; 
 
   .image5{background-image:url("image5c.jpg");}
 
-  .visit{width:40%;}
-  .visit:hover{width:41%;}
+  .visit{width:45%;}
+  .visit:hover{width:46%;}
 
   /* Footer */
   footer{height:200px;}
