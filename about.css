@@ -212,12 +212,12 @@ footer{background-color:#DCDCDC; color:#808080; height:230px; padding-top:20px; 
   .download:hover{width:36%;}
 
   /* Body Three */
-  .services{margin-left:-13%;}
+  .services{margin-left:25%;}
 
   .python, .uiux, .web{margin-left:38%;}
 
   /* Body Four */
-  .recent{margin-left:-40%;}
+  .recent{margin-left:6%;}
 
   .column2{display:block; margin-bottom:25px; margin-left:0; width:100%;}
 
@@ -325,7 +325,7 @@ footer{background-color:#DCDCDC; color:#808080; height:230px; padding-top:20px; 
   .responsive .home{margin-top:3.55%;}
 
   /* Body One */
-  .image{margin-left:35%; padding:150px;}
+  .image{margin-left:28%; padding:150px;}
 
   .image1{padding:170px;}
 
@@ -337,12 +337,12 @@ footer{background-color:#DCDCDC; color:#808080; height:230px; padding-top:20px; 
   .download:hover{width:20%;}
 
   /* Body Three */
-  .services{margin-left:18%;}
+  .services{margin-left:37%;}
 
   .python, .uiux, .web{margin-left:45%;}
 
   /* Body Four */
-  .recent{margin-left:16%;}
+  .recent{margin-left:6%;}
 
   .column2{display:block; margin-bottom:25px; margin-left:0; width:100%;}
 
