@@ -276,12 +276,12 @@ footer{background-color:#DCDCDC; color:#808080; height:230px; padding-top:20px; 
   .download:hover{width:41%;}
 
   /* Body Three */
-  .services{margin-left:-45%;}
+  .services{margin-left:15%;}
 
   .python, .uiux, .web{margin-left:34%;}
 
   /* Body Four */
-  .recent{font-size:130%; margin-left:-60%;}
+  .recent{font-size:130%; margin-left:3%;}
 
   .column2{display:block; margin-bottom:25px; margin-left:0; width:100%;}
 
