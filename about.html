@@ -8,7 +8,152 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&family=Rubik:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="about.css">
-    <title>Me</title>
+    <title>Hartford</title>
+
+    <style media="screen">
+      /* Basic Styling */
+      *{box-sizing:border-box; margin:0;}
+      body{background-color:#FFF; font-family:'Montserrat','Rubik','Nova Flat',Arial;}
+
+      /* Go-to-Top Button */
+      .mytop{display:block;}
+      .topButton{border-radius:100px; bottom:10px; color:#696969; cursor:pointer; display:none; font-size:3rem; outline:none; padding:1px; position:fixed; right:10px; text-shadow:0px 3px 3px #808080; transition:color 1s; z-index:99;}
+      .topButton:hover{color:#000; transition:color 1s;}
+
+      /* Navigation Bar */
+      .navBar{border-bottom:1px solid #F2F2F2; height:70px; padding-top:17px; transition:box-shadow 0.5s;}
+      .navBar:hover{box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); transition:box-shadow 0.5s;}
+      .nickname{color:#A9A9A9; cursor:default; display:inline; font-size:150%; margin-left:15%; padding:20px; text-decoration:none; text-shadow: 0 0 1px #000;}
+      .anchor{color:#696969; display:inline; padding:15px; text-decoration:none; transition:font-size 0.3s;}
+      .anchor:hover{font-size:110%; transition:font-size 0.3s;}
+      .home{cursor:default; margin-left:24.5%; text-decoration:underline;}
+      .home:hover{font-size:100%;}
+      .icon{display:none;}
+      /* Other Screen - Navigation Bar */
+      @media screen and (max-width:1300px){
+        a{display:inline;}
+        .navBar a:not(:first-child){display:none;}
+        .navBar{position: absolute; width:100%;}
+        .nickname{color:#696969; margin-left:10%;}
+        .icon{display:block;}
+        .navBar a.icon{color:#696969; display:inline; float:right; font-size:200%; height:45px; margin-right:3vw; text-align:center; text-decoration:none; transition:color 0.3s;}
+        .navBar a.icon:hover{color:#A9A9A9; transition:color 0.3s;}
+        .responsive{background-color:#FFF; height:370px; padding:20px; padding-left:0; padding-right:0; position:absolute; transition:box-shadow 1s; transition:width 1s; width:100%; z-index:10;}
+        .responsive:hover{box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); transition:box-shadow 1s;}
+        .responsive .icon{color:#696969; font-size:200%; height:45px; position:absolute; right:3vw; text-align:center; top:17px; transition:color 0.3s;}
+        .responsive .icon:hover{color:#A9A9A9; transition:color 0.3s;}
+        .responsive a.anchor{color:#696969; display:block; float:none; font-size:100%; margin-left:1%; padding:20px; padding-right:0; text-align:center; transition:box-shadow 0.3s; width:98%;}
+        .responsive a.anchor:hover{box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); transition:box-shadow 0.3s;}
+        .responsive a.home{margin-left:0; margin-right:0; padding-right:0;}
+        .responsive a.home:hover{box-shadow:none; cursor:default;}
+      }
+
+      /* Body One */
+      .body1{font-family:'Nova Flat', Arial; height:550px; line-height:2; padding-left:700px; padding-top:200px;}
+      .image{border-radius:1000px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); position:absolute; z-index:0;}
+      .image1{background-image: url("image1.jpg"); padding:170px; left:15%; top:210px;}
+      .hello, .designer{color:#696969;}
+      .button{background-color:#FFF; border:1px solid; border-radius:83px; color:#FF0000; cursor:pointer; display:inline-block; font-weight:100; margin-top:2%; padding:5px 15px; text-align:center; text-decoration:none; transition:0.3s;}
+      .button:hover{background-color:#FF0000; color:#FFF; transition:0.3s}
+      /* Other screen - Body one */
+      @media screen and (max-width:1300px){
+        .body1{height:610px; line-height:1.3; padding-top:435px; padding-left:0; text-align:center;}
+        .image1{padding:160px; left:36vw; top:100px;}
+        .button{border-radius:83px; margin-top:1%; padding:14px;}
+      }
+      @media screen and (max-width:900px){
+        .body1{margin-left:3%; width:94%;}
+        .image1{left:30vw;}
+      }
+      @media screen and (max-width:800px){
+        .image1{left:25vw;}
+      }
+      @media screen and (max-width:500px) {
+        .image1{left:10vw;}
+      }
+
+      /* The Line */
+      hr{margin-bottom:5%; margin-left:20%; margin-right:20%; margin-top:5%;}
+      /* Other view - the line */
+      @media screen and (max-width:1300px) {
+        hr{margin-top:8%; margin-bottom:0;}
+      }
+
+      /* Body Two */
+      .body2{height:500px; padding-left:50px; padding-right:50px;}
+      .about{padding:50px; display:block;}
+      .image2{background-image:url('image2.jpg'); padding:200px; left:58vw; top:850px;}
+      .let, .recent, .services{color:#696969; font-size:160%; margin-left:2%; padding-bottom:50px; padding-left:0; padding-right:0; padding-top:50px; text-shadow:0px 4px 4px #808080;}
+      span{margin-left:5%;}
+      .introduction{color:#708090; font-size:110%; line-height:1.5; margin-top:1%; padding-left:2%; padding-right:45%;}
+      .download{margin-left:2%; margin-top:1%; padding:10px 15px;}
+      /* Other screen - Body Two */
+      @media screen and (max-width:1300px){
+        .body2{margin-left:3%; padding-left:0; padding-top:0; padding-right:0; text-align:center; width:94%}
+        .about{padding:50px;}
+        .image2{display:none;}
+        .let, .recent, .services{margin-left:0%; text-align:left;}
+        span{margin-left:0;}
+        .introduction{padding-left:0; padding-right:0;}
+        .download{margin-left:0;}
+      }
+
+      /* Body Three */
+      .body3{height:600px; line-height:1.5; padding-bottom:250px; padding-top:0; text-align:center;}
+      .services{margin-bottom:2%;}
+      .row{margin-top:4%;}
+      .row:after{content:""; clear:both; display:table;}
+      .column{float:left; margin-left:; margin-top:-2%; padding:0 10px; width:33%;}
+      .card{border:1px solid #A9A9A9; border-radius:30px; color:#696969; height:300px; padding:16px; text-align:center; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);}
+      .logo{border:1px solid #A9A9A9; border-radius:1000px; padding:70px; width:10%; margin-left:32%; box-shadow:0 6px 10px 0 rgba(0,0,0,0.2);}
+      .uiux{background-image:url('uiux.jpg'); padding:75px;}
+      .web{background-image:url('webdesign.jpg');}
+      .python{background-image:url("python.png");}
+      .name{margin-top:3%;}
+      /* Other screen - Body three */
+      @media screen and (max-width:1300px){
+        .body3{height:1100px}
+        .column{display:block; margin-bottom:25px; margin-left:0; width:100%;}
+        .card{margin-bottom:1%; height: auto;}
+        .logo{margin-left:45%; margin-top:2%;}
+      }
+      @media screen and (max-width:1200px){
+        .logo{margin-left:43%;}
+      }
+      @media screen and (max-width:1000px){
+        .logo{margin-left:41%;}
+      }
+      @media screen and (max-width:800px){
+        .logo{margin-left:32%;}
+      }
+
+      /* Body Four */
+      .body4{height:auto; padding-bottom:100px; padding-top:0px; text-align:center;}
+      .card2{border:2px solid #F2F2F2; border-radius:5px; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); color:#696969; height:650px; margin-left:20%; text-align:center; width:60%}
+      .imagecard{margin-top:3%;}
+      .siteimage{border-radius:5px; height:533px; padding:100px;}
+      .image3{background-image:url("image3.jpg");}
+      .image4{background-image:url("image4.jpg");}
+      .image5{background-image:url("image5.jpg");}
+      .visit{margin-top:4%; padding:10px 15px;}
+      /* Other view - Body Four */
+      @media screen and (max-width:1300px) {
+        .body4{padding-right:0; padding-left:0;}
+        .card2{margin-left:15%; width:70%;}
+      }
+      @media screen and (max-width:900px){
+        .card2{margin-left:5%; width:90%;}
+      }
+
+      /* Footer */
+      footer{background-color:#DCDCDC; color:#808080; height:230px; padding-top:20px; text-align:center;}
+      footer h1{text-shadow: 0 0 1px #000;}
+      .follow{margin-top:1%; text-shadow:0 0 1px #000;}
+      .icons{color:#696969; font-size:200%; margin-bottom:1.5%; margin-right:1%; margin-top:1.5%; text-shadow: 0 0 1px #000; transition:0.3s;}
+      .icons:hover{font-size:210%; transition:0.3s;}
+      .instagram{margin-left:1.5%;}
+      footer p{text-shadow: 0 0 0.9px #000;}
+    </style>
   </head>
 
   <body>
@@ -18,23 +163,22 @@
 
     <!-- Navigation Bar -->
     <div class="navBar" id="myNavBar">
-      <a class="nickname" href="about.html">Hartford</a>
-      <a class="anchor home" href="about.html">Home</a>
+      <a class="nickname" href="#">Hartford</a>
+      <a class="anchor home" href="#">Home</a>
       <a class="anchor" href="#about">About</a>
       <a class="anchor" href="#service">Services</a>
       <a class="anchor" href="#recently">Portfolio</a>
-      <a class="anchor" href="#contact">Contact</a>
+      <a class="anchor" href="https://wa.me/09038394584">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </div>
 
     <!-- Body One -->
     <div class="body1">
-      <a href="image1a.jpg"><div class="image image1"></div></a>
+      <div class="image image1"></div>
       <h2 class="hello">Hello,</h2>
-      <h1>I AM DANIEL FAMUYIWA.</h1>
-      <h2 class="designer">A WEB DESIGNER & DEVELOPER</h2>
-      <a class="hire" href=""><b>HIRE ME</b></a>
-      <a class="cv" href=""><b>MY CV</b></a>
+      <h1>I AM DANIEL FAMUYIWA</h1>
+      <h2 class="designer">A WEB DEVELOPER</h2>
+      <a class="hire button" href=""><b>HIRE ME</b></a>
     </div>
 
     <hr>
@@ -45,7 +189,7 @@
       <div class="image image2"></div>
       <a class="let"><b>LET ME INTRODUCE MYSELF</b></a>
       <p class="introduction"><span></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a class="download" href=""><b>Download CV</b></a>
+      <a class="download button" href=""><b>Download CV</b></a>
     </div>
 
     <hr>
@@ -57,15 +201,15 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <div class="logo python"></div>
-            <h3 class="name">PYTHON</h3>
+            <div class="web logo"></div>
+            <h3 class="name">WEB DEVELOPEMENT</h3>
             <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
-            <div class="logo uiux"></div>
+            <div class="uiux logo"></div>
             <h3 class="name">UI/UX</h3>
             <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
           </div>
@@ -73,8 +217,8 @@
 
         <div class="column">
           <div class="card">
-            <div class="logo web"></div>
-            <h3 class="name">WEB DESIGN & DEVELOPMENT</h3>
+            <div class="python logo"></div>
+            <h3 class="name">PYTHON</h3>
             <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
           </div>
         </div>
@@ -91,21 +235,21 @@
         <div class="column2">
           <div class="card2">
             <a href="https://d4nielcod.github.io/Dayspring/Dayspring.html"><div class="siteimage image3"></div></a>
-            <a class="visit" href="https://d4nielcod.github.io/Dayspring/Dayspring.html"><b>Visit Site</b></a>
+            <a class="visit button" href="https://d4nielcod.github.io/Dayspring/Dayspring.html"><b>Visit Site</b></a>
           </div>
         </div>
 
         <div class="column2">
           <div class="card2 imagecard">
             <a href="https://d4nielcod.github.io/Ovak-Properties/Ovak.html"><div class="siteimage image4"></div></a>
-            <a class="visit" href="https://d4nielcod.github.io/Ovak-Properties/Ovak.html"><b>Visit Site</b></a>
+            <a class="visit button" href="https://d4nielcod.github.io/Ovak-Properties/Ovak.html"><b>Visit Site</b></a>
           </div>
         </div>
 
         <div class="column2">
           <div class="card2 imagecard">
             <a href="https://d4nielcod.github.io/Dice-Game/player.html"><div class="siteimage image5"></div></a>
-            <a class="visit" href="https://d4nielcod.github.io/Dice-Game/player.html"><b>Visit Site</b></a>
+            <a class="visit button" href="https://d4nielcod.github.io/Dice-Game/player.html"><b>Visit Site</b></a>
           </div>
         </div>
       </div>
@@ -115,9 +259,9 @@
     <footer>
       <h1>Hartford</h1>
       <h2 class="follow">FOLLOW ME</h2>
-      <a href="#"><i class="fa fa-instagram icons instagram" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-instagram icons instagram" aria-hidden="true"></i></a>
       <a href="#"><i class="fa fa-facebook-official icons" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-whatsapp icons" aria-hidden="true"></i></a>
+      <a href="https://wa.me/09038394584"><i class="fa fa-whatsapp icons" aria-hidden="true"></i></a>
       <a href="#"><i class="fa fa-linkedin-square icons" aria-hidden="true"></i></a>
       <a href="#"><i class="fa fa-github icons" aria-hidden="true"></i></a>
       <p>Copyright ©2020 All rights reserved</p>
