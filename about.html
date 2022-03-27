@@ -42,10 +42,14 @@
         .responsive:hover{box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); transition:box-shadow 1s;}
         .responsive .icon{color:#696969; font-size:200%; height:45px; position:absolute; right:3vw; text-align:center; top:17px; transition:color 0.3s;}
         .responsive .icon:hover{color:#A9A9A9; transition:color 0.3s;}
-        .responsive a.anchor{color:#696969; display:block; float:none; font-size:100%; margin-left:1%; padding:20px; padding-right:0; text-align:center; transition:box-shadow 0.3s; width:98%;}
+        .responsive a.anchor{color:#696969; display:block; float:none; font-size:100%; padding:20px; text-align:center; transition:box-shadow 0.3s; width:100%;}
         .responsive a.anchor:hover{box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); transition:box-shadow 0.3s;}
-        .responsive a.home{margin-left:0; margin-right:0; padding-right:0;}
+        .responsive a.home{margin:0; padding:20px 0px;}
         .responsive a.home:hover{box-shadow:none; cursor:default;}
+      }
+      @media screen and (max-width:400px){
+        .navBar a.icon{margin-right:6vw;}
+        .responsive a.icon{margin-right:6vw;}
       }
 
       /* Body One */
@@ -68,8 +72,12 @@
       @media screen and (max-width:800px){
         .image1{left:25vw;}
       }
-      @media screen and (max-width:500px) {
+      @media screen and (max-width:500px){
         .image1{left:10vw;}
+      }
+      @media screen and (max-width:400px){
+        .body1{height:670px}
+        .image1{left:8vw;}
       }
 
       /* The Line */
@@ -96,6 +104,10 @@
         span{margin-left:0;}
         .introduction{padding-left:0; padding-right:0;}
         .download{margin-left:0;}
+      }
+      @media screen and (max-width:400px){
+        .body2{height:560px; text-align:left;}
+        .about{padding:30px;}
       }
 
       /* Body Three */
@@ -126,6 +138,9 @@
       @media screen and (max-width:800px){
         .logo{margin-left:32%;}
       }
+      @media screen and (max-width:400px){
+        .logo{margin-left:28%;}
+      }
 
       /* Body Four */
       .body4{height:auto; padding-bottom:100px; padding-top:0px; text-align:center;}
@@ -135,14 +150,21 @@
       .image3{background-image:url("image3.jpg");}
       .image4{background-image:url("image4.jpg");}
       .image5{background-image:url("image5.jpg");}
-      .visit{margin-top:4%; padding:10px 15px;}
+      .DT{color:#696969; margin-right:2%; text-decoration:none;}
+      .visit{margin-top:5%; padding:10px 15px;}
       /* Other view - Body Four */
-      @media screen and (max-width:1300px) {
+      @media screen and (max-width:1300px){
         .body4{padding-right:0; padding-left:0;}
         .card2{margin-left:15%; width:70%;}
+        .visit{margin-top:3%;}
       }
       @media screen and (max-width:900px){
         .card2{margin-left:5%; width:90%;}
+        .visit{margin-top:5%;}
+      }
+      @media screen and (max-width:400px){
+        .body4{padding-bottom:60px;}
+        .visit{margin-top:10%;}
       }
 
       /* Footer */
@@ -235,6 +257,7 @@
         <div class="column2">
           <div class="card2">
             <a href="https://d4nielcod.github.io/Dayspring/Dayspring.html"><div class="siteimage image3"></div></a>
+            <a class="DT" href="https://d4nielcod.github.io/Dayspring/Dayspring.html">DAYSPRING</a>
             <a class="visit button" href="https://d4nielcod.github.io/Dayspring/Dayspring.html"><b>Visit Site</b></a>
           </div>
         </div>
@@ -242,6 +265,7 @@
         <div class="column2">
           <div class="card2 imagecard">
             <a href="https://d4nielcod.github.io/Ovak-Properties/Ovak.html"><div class="siteimage image4"></div></a>
+            <a class="DT" href="https://d4nielcod.github.io/Ovak-Properties/Ovak.html">OVAK PROPERTIES</a>
             <a class="visit button" href="https://d4nielcod.github.io/Ovak-Properties/Ovak.html"><b>Visit Site</b></a>
           </div>
         </div>
@@ -249,6 +273,7 @@
         <div class="column2">
           <div class="card2 imagecard">
             <a href="https://d4nielcod.github.io/Dice-Game/player.html"><div class="siteimage image5"></div></a>
+            <a class="DT" href="https://d4nielcod.github.io/Dice-Game/player.html">DICE GAME</a>
             <a class="visit button" href="https://d4nielcod.github.io/Dice-Game/player.html"><b>Visit Site</b></a>
           </div>
         </div>
